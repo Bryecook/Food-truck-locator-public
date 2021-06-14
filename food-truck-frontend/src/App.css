@@ -1,0 +1,311 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.bg {
+  background-image: url("https://i.pinimg.com/originals/c9/36/63/c93663e506985711f7d6f4b3eb903d4c.jpg");
+  height: 100%; 
+  background-position: center;
+  background-repeat: repeat;
+  /* background-size: cover; */
+}
+
+/* .bg {
+  background-image: url("https://i.pinimg.com/originals/c9/36/63/c93663e506985711f7d6f4b3eb903d4c.jpg"), url("https://infatuation.imgix.net/media/images/guides/arbor-food-trailer-truck-park-austin/banners/1596825134.835677.png?auto=format&fit=max&h=1200&w=3200");
+  background-position: right bottom, left top;
+  background-repeat: no-repeat, repeat;
+} */
+
+/* .App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 20vh;
+  display: block;
+}
+.card {
+  width: 300px;
+  height: 300px;
+background-color: grey;
+border: 1px solid #bacdd8;
+padding: 8px;
+border-radius: 12px;
+float: left;
+margin: auto;
+}
+
+.img {
+  width: 200px;
+  height: 200px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.center{
+  margin: auto;
+  text-align: center;
+} */
+
+.image-info-page{
+  display: block;
+  width: 480px;
+  height: 360px;
+  /* align-items: center; */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+:root {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #eee;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+body * + * {
+  margin-top: 1.5em;
+}
+
+header {
+  padding: 1em 1.5em;
+  color: #fff;
+  background-color: #0072b0;
+  border-radius: .5em;
+  margin-bottom: 1.5em;
+}
+
+.main {
+  padding: 13px 16px;
+  background-color: #fff;
+  border-radius: .5em;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.error{
+  color: #D8000C;
+}
+
+.success{
+  color:green;
+}
+.center {
+text-align: center;
+}
+.front-header{
+  text-align: center;
+	width: 100%;
+	height: 100%;
+	padding: 50px;
+	color: rgb(255, 255, 255);
+	text-shadow: 1px 1px 1px #333;
+  background-size: 200px 100px;
+  /* background-image: url("https://i.pinimg.com/originals/2d/ab/e4/2dabe41ab80db0501bf0f3129e64ec13.jpg"); */
+	
+}
+.media {
+  float: left;
+  overflow-y: hidden;
+  margin: 0 1.5em 1.5em 0;
+  width: calc(50% - 1.5em);
+  padding: 1.5em;
+  background-color: #eee;
+  border-radius: 0.5em;
+}
+
+.filter-header {
+  float: left;
+  overflow: hidden;
+  text-align: center;
+}
+
+.filter-card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px; 
+  background-color: #eee;
+  text-align: center;
+  padding-bottom: 3px;
+  padding-top: 3px;
+}
+
+.clearfix::before,
+.clearfix::after {
+  display: table;
+  content: " ";
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+.media:nth-child(odd) {
+  clear: left;
+}
+
+.media-image {
+  width: 25%;
+  height: 25%;
+  float: left;
+  margin-right: 1.5em;
+}
+
+.media-body {
+  overflow: auto;
+  margin-top: 0;
+}
+
+.media-body h4 {
+  margin-top: 0;
+}
+
+/* Like Button */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
+.heart-btn{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.content{
+  padding: 13px 16px;
+  display: flex;
+  /* border: 2px solid #eae2e1;
+  border-radius: 5px; */
+  cursor: pointer;
+  width: 80px;
+}
+.content .heart-active{
+  border-color: #f9b9c4;
+  background: #fbd0d8;
+}
+.content .heart{
+  position: absolute;
+  background: url("./like.png") no-repeat;
+  background-position: left;
+  background-size: 2900%;
+  height: 90px;
+  width: 90px;
+  top: 50%;
+  left: 21%;
+  transform: translate(-50%,-50%);
+}
+.content .heart-red{
+  position: absolute;
+  background: url("./like.png") no-repeat;
+  background-position: right;
+  background-size: 2900%;
+  height: 90px;
+  width: 90px;
+  top: 50%;
+  left: 21%;
+  transform: translate(-50%,-50%);
+}
+.text{
+  font-size: 21px;
+  margin-left: 30px;
+  color: grey;
+  font-family: 'Montserrat',sans-serif;
+}
+
+
+.text.heart-active{
+  color: #000;
+}
+.heart .heart-active{
+  animation: animate .8s steps(28) 1;
+  background-position: right;
+}
+@keyframes animate {
+  0%{
+    background-position: left;
+  }
+  100%{
+    background-position: right;
+  }
+}
+
+/* Star Ratings */
+
+/* body { font-size: 18px; } */
+
+.stars-container {
+  position: relative;
+  display: inline-block;
+  color: transparent;
+}
+
+.stars-container:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '★★★★★';
+  color: lightgray;
+}
+
+.stars-container:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '★★★★★';
+  color: gold;
+  overflow: hidden;
+}
+
+.stars-0:after { width: 0%; }
+.stars-10:after { width: 10%; }
+.stars-20:after { width: 20%; }
+.stars-30:after { width: 30%; }
+.stars-40:after { width: 40%; }
+.stars-50:after { width: 50%; }
+.stars-60:after { width: 60%; }
+.stars-70:after { width: 70%; }
+.stars-80:after { width: 80%; }
+.stars-90:after { width: 90%; }
+.stars-100:after { width: 100; }
